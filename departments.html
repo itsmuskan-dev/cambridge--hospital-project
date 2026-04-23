@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambridge Hospital | Specialized Departments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="depcss.css">
+</head>
+<body>
+
+<div class="container my-5">
+    <h2 class="text-center mb-5 main-heading">Our Specialized Departments</h2>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="gastro.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Gastroenterology</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Arsalan Ali</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Gastroenterology')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Arsalan Ali', '15 Years', 'MBBS, FCPS', 'Best Specialist 2023')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="surgery.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">General Surgery</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Ahmed Shah</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('General Surgery')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Ahmed Shah', '12 Years', 'MBBS, MS', 'Laparoscopic Expert')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="blood.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Haematology & Bloodbank</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Sarah Malik</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Haematology')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Sarah Malik', '10 Years', 'MBBS, M.Phil', 'Blood Disorder Expert')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="histo.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Histopathology</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Sana Khan</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Histopathology')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Sana Khan', '8 Years', 'MBBS, FCPS', 'Cancer Diagnostics')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="internal.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Internal Medicine</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Zubair Qureshi</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Internal Medicine')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Zubair Qureshi', '20 Years', 'MBBS, MD', 'Chief Physician')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="mental.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Mental Health</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Faiza Ahmed</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Mental Health')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Faiza Ahmed', '11 Years', 'MBBS, FCPS', 'Senior Psychiatrist')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="micro.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Microbiology</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Hamza Ali</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Microbiology')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Hamza Ali', '9 Years', 'Ph.D Microbiology', 'Lead Researcher')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="mol.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Molecular Pathology</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Bilal Hassan</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Molecular Pathology')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Bilal Hassan', '13 Years', 'MBBS, Ph.D', 'Genetics Expert')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="derm.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">Dermatology</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Nadia Sheikh</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('Dermatology')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Nadia Sheikh', '10 Years', 'MBBS, MCPS', 'Skin Specialist')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+                <div class="card-header-red"><div class="doc-img-container"><img src="ent.jpg" alt="Dept"></div></div>
+                <div class="doctor-body">
+                    <h4 class="dept-name">E.N.T Surgery</h4>
+                    <p class="text-muted">Senior Specialist: Dr. Usman Tariq</p>
+                    <div class="btn-container">
+                        <button class="btn-book" onclick="openApt('E.N.T Surgery')">Book Appointment</button>
+                        <button class="btn-history" onclick="openHistory('Dr. Usman Tariq', '14 Years', 'MBBS, FCPS', 'Head Surgeon')">View History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</div>
+
+<div class="modal fade" id="historyModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content curvy-modal">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title">Doctor's Professional History</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="historyContent"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="aptModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content curvy-modal">
+            <div class="modal-header bg-red text-white">
+                <h5 class="modal-title" id="modalTitle">Book Appointment</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 border-end">
+                            <div class="mb-3"><label class="form-label fw-bold">Full Name</label><input type="text" class="form-control custom-input" placeholder="Name" required></div>
+                            <div class="mb-3"><label class="form-label fw-bold">Phone</label><input type="tel" class="form-control custom-input" placeholder="03xx-xxxxxxx" required></div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <label class="form-label fw-bold d-block mb-3">Select Appointment Date</label>
+                            <input type="date" class="form-control visible-calendar" required>
+                        </div>
+                    </div>
+                    <hr><button type="submit" class="btn-confirm-booking w-100">Confirm Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/JS/script.js"></script>
+</body>
+</html>
